@@ -21,6 +21,7 @@
 		body{
 			position: relative;
 		}
+
 	</style>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
@@ -36,13 +37,17 @@
 	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 	{% if theme[0] == 'None' %}
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@3/dark.css" rel="stylesheet">
 	{% else %}
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/white.css') }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 	{% endif %}
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	
 </head>
 
 <body data-spy="scroll" data-target="#nav-menu-container" data-offset="50">
@@ -66,12 +71,24 @@
 					<ul class="nav-menu nav">
 						<li><a class="nav-link" href="#section1">Home</a></li>
 						<li><a class="nav-link" href="#section2">About</a></li>
-						<li><a class="nav-link" href="#section3">Portfolio</a></li>
+						<li><a class="nav-link" href="#section3">Projects</a></li>
 						<li><a class="nav-link" href="#section7">Education</a></li>
-						<li><a class="nav-link" href="#section4">Experience</a></li>
+						<li><a class="nav-link" href="#section4">Work</a></li>
 						<li><a class="nav-link" href="#section5">Skills</a></li>
 						<li><a class="nav-link" href="#section8">Packages</a></li>
 						<li><a class="nav-link" href="#section6">Contact</a></li>
+						<li><a class="nav-link" href="#" onclick="changeTheme()" style="float: right"><i class="fa fa-cog"></i></a></li>
+						<script type="text/javascript">
+							function changeTheme(){
+								Swal.fire({
+								  icon: 'success',
+								  title: 'Theme',
+								  text: '<label class="switch"><input type="checkbox"><span class="slider round"></span></label>',
+								  position: 'top-end'
+								})
+								
+							}
+						</script>
 					</ul>
 				</nav>
 			</div>
@@ -239,7 +256,6 @@
 		</div>
 	</section>
 	<!-- End Job Historyt Area Area -->
-
 
 	<!-- Start Service Area -->
 	<section {% if theme[0] == "None" %} style="background-color: #222222"{% endif %} class="service-area section-gap" id="section5">
@@ -469,5 +485,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
-
 </html>
