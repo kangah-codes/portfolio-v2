@@ -57,6 +57,16 @@ class jobExp(db.Model):
 	from_date = db.Column(db.String(), nullable=True)
 	to_date = db.Column(db.String(), nullable=True)
 
+class User(db.Model):
+	__tablename__ = "admin"
+
+	id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+	username = db.Column(db.String(), nullable=True)
+	password = db.Column(db.String(), nullable=True)
+
+	def __repr__(self):
+		return f"User {self.id}, {self.username}"
+
 @login.user_loader
 def load_user(id):
     return User.query.get(int(id))

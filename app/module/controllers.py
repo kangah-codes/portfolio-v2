@@ -15,3 +15,6 @@ def index():
 	}
 	return render_template('index.html', **data)
 
+@mod_auth.route('/admin_home')
+def home():
+	return render_template('dashboard.html')
