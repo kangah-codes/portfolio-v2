@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Joshua Akangah</title>
+
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	{% if theme[0] == 'None' %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	{% else %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/white.css') }}">
+	{% endif %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#nav-menu-container" data-offset="50">
+	<!-- Start Preloader Area -->
+	<div class="preloader-area">
+		<div class="loader-box">
+			<div class="loader"></div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					{% if theme[0] == 'None' %}
+						<a href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" title=""  /></a>
+					{% else %}
+						<a href="#"><img src="{{ url_for('static', filename='img/white.png') }}" alt="" title=""  /></a>
+					{% endif %}
+				</div>
+				<nav id="nav-menu-container" class="nav" style="color: #fff;">
+					<ul class="nav-menu nav">
+						<li><a class="nav-link" href="#section1">Home</a></li>
+						<li><a class="nav-link" href="#section2">About</a></li>
+						<li><a class="nav-link" href="#section3">Portfolio</a></li>
+						<li><a class="nav-link" href="#section7">Education</a></li>
+						<li><a class="nav-link" href="#section4">Experience</a></li>
+						<li><a class="nav-link" href="#section5">Skills</a></li>
+						<li><a class="nav-link" href="#section8">Packages</a></li>
+						<li><a class="nav-link" href="#section6">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="home-banner-area" id="section1">
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center">
+				<div class="banner-content col-lg-6 col-md-12 justify-content-center ">
+					<div class="me wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">Hey there! I'm</div>
+					<h1 class="wow fadeInUp white" data-wow-duration="1s" data-wow-delay="1s">Joshua Akangah</h1>
+					<div class="designation mb-50 wow white fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
+						Student,
+						<span class="developer">Aspiring Software Engineer</span>
+						<span>and</span>
+						<span class="developer">STEM</span> enthusiast
+					</div>
+				</div>
+				<div class="banner-img col-lg-6 col-md-6 align-self-end">
+					<img class="img-fluid" src="{{ url_for('static', filename='img/profile1.png') }}" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+	<!-- Start About Area -->
+	<section class="about-area section-gap" id="section2">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-6 about-left">
+					<img class="img-fluid" src="{{ url_for('static', filename='img/img.JPG') }}" alt="" style="border-radius: 10px">
+				</div>
+				<div class="col-lg-5 col-md-12 about-right">
+					<div class="section-title">
+						<h2>about myself</h2>
+					</div>
+					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
+							<p>NULL</p>
+					</div>
+					<a href="{{ url_for('static', filename='img/uploads/resume.pdf') }}" class="primary-btn" data-text="Resume">
+						<span>M</span>
+						<span>y</span>
+						<span></span>
+						<span>R</span>
+						<span>e</span>
+						<span>s</span>
+						<span>u</span>
+						<span>m</span>
+						<span>e</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End About Area -->
+
+	<!-- Start Work Area Area -->
+	<section {% if theme[0] == "None" %} style="background-color: #222222" {% endif %} class="work-area section-gap-top section-gap-bottom-90 work" id="section3">
+		<div class="container">
+			<div class="row d-flex justify-content-between align-items-end mb-80">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Portfolio</h2>
+						<p>These are some of my most renowned works</p>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="filters">
+						<ul>
+									<li class="active" data-filter=".all">All</li>
+									<li data-filter="">NULL</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="filters-content">
+				<div class="row grid">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Work Area Area -->
+
+	<section class="education-area section-gap" id="section7">
+		<div class="container">
+			<div class="row d-flex justify-content-between align-items-end mb-80">
+				<div class="col-lg-6">
+					<div class="section-title">
+						<h2>Education</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			    <div class="col-lg-6">
+					<div class="single-job">
+						<div class="top d-flex justify-content-between">
+							<div class="top-left">
+								<h4>Bishop Bowers School</h4>
+								<p>2008-2015</p>
+							</div>
+							<div class="top-right">
+								<img src="{{ url_for('static', filename='img/bbs.png') }}" style="width: 50px; height: 50px">
+							</div>
+						</div>
+						<div class="bottom wow fadeIn" data-wow-duration="2s">
+							BECE Candidate
+						</div>
+					</div>
+				</div>
+					<div class="col-lg-6">
+						<div class="single-job">
+							<div class="top d-flex justify-content-between">
+								<div class="top-left">
+									<h4>University Practice Senior High</h4>
+									<p>2015-2018</p>
+								</div>
+								<div class="top-right">
+									<img src="{{ url_for('static', filename='img/upshs.png') }}" style="width: 50px; height: 50px">
+								</div>
+							</div>
+							<div class="bottom wow fadeIn" data-wow-duration="2s">
+								General Arts
+							</div>
+						</div>
+					</div>
+				<div class="col-lg-6">
+					<div class="single-job">
+						<div class="top d-flex justify-content-between">
+							<div class="top-left">
+								<h4>University of Ghana</h4>
+								<p></p>
+							</div>
+							<div class="top-right">
+								<img src="{{ url_for('static', filename='img/ug.png') }}" style="width: 50px; height: 50px">
+							</div>
+						</div>
+						<div class="bottom wow fadeIn" data-wow-duration="2s">
+						</div>
+					</div>
+				</div>
+
+				</div>
+		</div>
+	</section>
+
+
+	<!-- Start Job History Area Area -->
+	<section class="job-area section-gap-top section-gap-bottom-90" id="section4">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>Job Experience</h2>
+						<p>Some experience I've acquired in the industry</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+			</div>
+		</div>
+	</section>
+	<!-- End Job Historyt Area Area -->
+
+
+	<!-- Start Service Area -->
+	<section {% if theme[0] == "None" %} style="background-color: #222222"{% endif %} class="service-area section-gap" id="section5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>Skills</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			</div>
+		</div>
+	</section>
+	<!-- End Service Area -->
+
+	<section class="job-area section-gap-top section-gap-bottom-90" id="section8">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>Development Packages I offer</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-user" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Starter Web Dev <br>GH₵ 199.99</a></h4>
+                            <ol>
+                            	<li><h6>Single Page Website</h6></li>
+                            	<li><h6>No functionality</h6></li>
+                            	<li><h6>No domain</h6></li>
+                            	<li><h6>No hosting</h6></li>
+                            	<li><h6>No maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal for individuals who want a simple personal page</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-code" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Bronze Web Dev <br>GH₵ 299.99</a></h4>
+                            <ol>
+                            	<li><h6>Multi Page Website</h6></li>
+                            	<li><h6>Bare minimum functionality</h6></li>
+                            	<li><h6>No domain</h6></li>
+                            	<li><h6>Hosting on a free server</h6></li>
+                            	<li><h6>6 months free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal for individuals who want a site with small customizable features</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-database" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Silver Web Dev <br>GH₵ 499.99</a></h4>
+                            <ol>
+                            	<li><h6>Multi Page WebApp</h6></li>
+                            	<li><h6>Advanced functionality</h6></li>
+                            	<li><h6>No domain</h6></li>
+                            	<li><h6>Hosting on a free server</h6></li>
+                            	<li><h6>6 months free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal for small scale startups/businesses with a budget</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-thumbs-up" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Gold Web Dev <br>GH₵ 999.99</a></h4>
+                            <ol>
+                            	<li><h6>Multi Page WebApp</h6></li>
+                            	<li><h6>Premium functionality</h6></li>
+                            	<li><h6>No domain</h6></li>
+                            	<li><h6>Hosting on a free server</h6></li>
+                            	<li><h6>6 months free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal for schools, businesses wanting to reach more customers</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-diamond" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Diamond Web Dev <br>GH₵ 1999.99</a></h4>
+                            <ol>
+                            	<li><h6>Multi Page WebApp</h6></li>
+                            	<li><h6>Premium functionality</h6></li>
+                            	<li><h6>Custom Domain</h6></li>
+                            	<li><h6>Hosting on a dedicated server for up to 1 year</h6></li>
+                            	<li><h6>18 months free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal if you don't want the stress of maintaining your servers</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-cloud-check" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Cloud Nine <br>GH₵ 1299.99</a></h4>
+                            <ol>
+                            	<li><h6>Cloud computing services</h6></li>
+                            	<li><h6>Backend development</h6></li>
+                            	<li><h6>Dedicated VM instance</h6></li>
+                            	<li><h6>1 year free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal for people with existing apps or frontend projects wanting a server side</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <span class="lnr lnr-cart" style="color: black"></span>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Domain and Hosting <br>GH₵ 699.99</a></h4>
+                            <ol>
+                            	<li><h6>Custom domain</h6></li>
+                            	<li><h6>Hosting on a dedicated server for up to 1 year</h6></li>
+                            	<li><h6>1 year free maintenance</h6></li>
+                            </ol>
+                            <h6>*Ideal if you want a cheaper package but with a custom domain and hosting</h6>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+		</div>
+	</section>
+
+	<!-- Start Contact Area -->
+	<section class="contact-area section-gap" id="section6">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="contact-title">
+						<h2>Contact Me</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-80">
+			</div>
+		</div>
+	</section>
+	<!-- End Contact Area -->
+
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer-top flex-column">
+						<div class="footer-logo">
+							<img src="{{ url_for('static', filename='img/logo.png') }}" style="width: 60px; height:60px" alt="" title="" />
+							<h4>Socia Media Handles</h4>
+						</div>
+						<div class="footer-social">
+							<a href="https://web.facebook.com/joshua.akangah"><i class="fa fa-facebook"></i></a>
+							<a href="https://t.me/pygpd"><i class="fa fa-telegram"></i></a>
+							<a href="https://wa.me233550120156"><i class="fa fa-whatsapp"></i></a>
+							<a href="https://www.linkedin.com/in/joshua-akangah-b94673162/"><i class="fa fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row footer-bottom justify-content-center">
+				<p class="col-lg-8 col-sm-12 footer-text" style="color: #222222">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Joshua Akangah</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. </p> -->
+			</div>
+		</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#">
+			<i class="lnr lnr-arrow-up"></i>
+		</a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/superfish.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/mn-accordion.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.circlechart.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

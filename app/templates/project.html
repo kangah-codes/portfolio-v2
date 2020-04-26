@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>{{ proj[0][0] }}</title>
+
+	<style type="text/css">
+		body{
+			position: relative;
+		}
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nice-select.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}">
+	{% if theme[0] == 'None' %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	{% else %}
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/white.css') }}">
+	{% endif %}
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#nav-menu-container" data-offset="50">
+
+	<!-- Start Preloader Area -->
+	<div class="preloader-area">
+		<div class="loader-box">
+			<div class="loader"></div>
+		</div>
+	</div>
+	<header id="header">
+		<div class="container main-menu">
+			<div class="row align-items-center d-flex">
+				<div id="logo">
+					<a href="#"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container" class="nav" style="color: #fff;">
+					<ul class="nav-menu nav navv">
+						<li><a class="nav-link" href="#section3">Portfolio</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative" id="section3">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">
+						{{ proj[0][0] }}
+					</h1>
+					<p class="link-nav">
+						<ul class="nav-menu" style="list-style: none;">
+						<span class="box">
+
+						<li><a class="nav-link" href="/">Home</a></li>
+					</span>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End banner Area -->
+
+
+
+	<!-- Start Work Area Area -->
+	<section class="portfolio_details_area section-gap" id="section3">
+		<div class="container">
+			<div class="portfolio_details_inner">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="left_img">
+							<img class="img-fluid" src="../../static/img/uploads/{{ proj[0][5] }}.png" alt="" style="border-radius: 5px">
+						</div>
+					</div>
+					<div class="offset-md-1 col-md-5">
+						<div class="portfolio_right_text mt-30">
+							{% if theme[0] == 'None' %}
+								<h4 style="color: #fff">{{ proj[0][0] }}</h4>
+								<p>{{ proj[0][1] }}</p>
+								<ul class="list">
+									<li style="color: #fff">Category: {{ proj[0][2] }}</li>
+									<li style="color: #fff">Completed: {{ proj[0][4] }}</li>
+								</ul>
+							{% else %}
+							<h4>{{ proj[0][0] }}</h4>
+								<p>{{ proj[0][1] }}</p>
+								<ul class="list">
+									<li>Category: {{ proj[0][2] }}</li>
+									<li>Completed: {{ proj[0][4] }}</li>
+								</ul>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Work Area Area -->
+
+	<!-- start footer Area -->
+	<footer class="footer-area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="footer-top flex-column">
+						<div class="footer-logo">
+							<img src="{{ url_for('static', filename='img/logo.png') }}" alt="" title="" />
+							<h4>Let's get in touch</h4>
+						</div>
+						<div class="footer-social">
+							<a href="https://web.facebook.com/joshua.akangah"><i class="fa fa-facebook"></i></a>
+							<a href="https://t.me/pygpd"><i class="fa fa-telegram"></i></a>
+							<a href="https://wa.me233550120156"><i class="fa fa-whatsapp"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<!-- End footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#">
+			<i class="lnr lnr-arrow-up"></i>
+		</a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="{{ url_for('static', filename='js/easing.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/superfish.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/mn-accordion.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/isotope.pkgd.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/jquery.circlechart.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/mail-script.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
